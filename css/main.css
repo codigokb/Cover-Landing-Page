@@ -64,6 +64,16 @@ a {
     will-change: box-shadow, transform;
 }
 
+.button:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+}
+
+.button:active {
+    box-shadow: 1 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: scale(0.98) translateY(-2px);
+}
+
 /* 3. Specific */
 
 .wallpaper {
