@@ -13,12 +13,13 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 <body>
-    <div class="wallpaper"></div>
+    <div id="wallpaper" class="wallpaper" data-image="images/austria.jpg" ></div>
     <div class="content">
         <aside class="side">
-            <figure class="picture">
+            <figure id="picture" class="picture">
                 <div class="picture-shadow"></div>
-                <img id="pictureImage" class="picture-image" 
+                <img id="pictureImage" class="picture-image"
+                    class="picture-image" 
                     src="images/alex.jpg"
                     srcset="images/alex.jpg 1x
                             images/alex@2x.jpg 2x
@@ -44,6 +45,9 @@
             </p>
         </div>
         <div class="contact">
+            <a class="button" href="mailto:youremail@example.com">
+                Get in touch
+            </a>
             <ul class="social">
                 <li>
                     <a>
@@ -61,11 +65,19 @@
                     </a>
                 </li>
             </ul>
-            <a class="button" href="mailto:youremail@example.com">
-                Get in touch
-            </a>
         </div>
     </main>    
     </div>
+    <noscript>
+        <style type="text/css">
+            .wallpaper {
+                animation-name: zoomOut;
+            }
+
+            .picture {
+                animation-name: dropIn;
+            }
+        </style>
+    </noscript>
 </body>
 </html>
